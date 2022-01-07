@@ -34,3 +34,35 @@ function playRound(playerSelection, computerSelection) {
     }
   }
 }
+
+function game() {
+  let playerSelection;
+  let computerSelection;
+  let scores = [0, 0];
+  for (let i = 0; i < 5; i++) {
+    playerSelection = prompt(`Choose "rock", "paper" or "scissors".`);
+    computerSelection = computerPlay();
+    let result = playRound(playerSelection, computerSelection);
+    if (result.includes("win")) {
+      scores[0]++;
+    }
+    if (result.includes("lose")) {
+      scores[1]++;
+    } else {
+      scores;
+    }
+    console.log("*************");
+    console.log(result);
+    console.log(`You: ${scores[0]} Computer: ${scores[1]}`);
+  }
+  if (scores[0] === scores[1]) {
+    console.log("You tied with the computer!");
+  }
+  if (scores[0] > scores[1]) {
+    console.log("You beat the computer!");
+  } else {
+    console.log("You lost to the computer!");
+  }
+}
+
+game();
