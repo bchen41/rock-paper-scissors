@@ -16,7 +16,7 @@ This Odin project is a rock paper scissors game against the computer.
 ![badge](https://img.shields.io/badge/license-MIT-blue)
 <br/>
 Copyright © 2021 [Betty Chen](https://github.com/bchen41). <br />
-This project is [MIT](https://github.com/bchen41/Note-Taker/blob/main/LICENSE) licensed.
+This project is [MIT](https://github.com/bchen41/rock-paper-scissors/blob/main/LICENSE) licensed.
 
 ## Contributing
 
